@@ -80,7 +80,7 @@ else
 	$(xml2rfc) $< -o $@ --html
 
 %.txt: %.xml
-	$(xml2rfc) $< -o $@ --text
+	$(xml2rfc) $< -o $@ --text --utf-8 # hjroh
 endif
 
 %.html: %.htmltmp $(LIBDIR)/addstyle.sed $(LIBDIR)/style.css
